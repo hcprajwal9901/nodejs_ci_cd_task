@@ -14,7 +14,6 @@ const Footer: React.FC = () => {
         <div className="flex items-center gap-4">
             <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors">{ICONS.github}</a>
             <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors">{ICONS.linkedin}</a>
-            <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors">{ICONS.twitter}</a>
         </div>
       </div>
     </footer>

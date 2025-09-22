@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
           I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, feel free to reach out. My inbox is always open!
         </p>
         <a 
-          href={`mailto:${PERSONAL_INFO.email}`}
+          href="mailto:hcprajwal9901@gmail.com"
           className="inline-block bg-accent text-white font-bold py-4 px-10 rounded-full hover:bg-blue-500 transition-all duration-300 shadow-lg shadow-accent/20 text-lg"
         >
           Say Hello

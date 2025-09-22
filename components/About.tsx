@@ -10,14 +10,18 @@ const About: React.FC = () => {
         <div className="md:col-span-2">
             <img 
               src="https://picsum.photos/seed/profile/800/800"
-              alt="Alex Doe"
+              alt="H C Prajwal"
               className="rounded-full aspect-square object-cover shadow-2xl"
             />
         </div>
         <div className="md:col-span-3">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
           <p className="text-text-secondary text-lg mb-8">
-            Hello! I'm a frontend developer with a deep passion for creating intuitive, dynamic, and high-performance web experiences. With several years in the industry, I've honed my skills in the React ecosystem, turning complex requirements into elegant, user-friendly solutions. I thrive in collaborative environments and am always eager to learn new technologies to push the boundaries of what's possible on the web.
+            Hello! I'm a  Ambitious entry-level professional in Machine Learning, Data Science, and Full-Stack Development with practical experience in 
+Python, TensorFlow, NodeJS and React. Demonstrated capability in enhancing web applications through efficient API deployment and 
+database solutions during a recent internship. Equipped with strong skills in data preprocessing, model training, and visualization to 
+effectively contribute in ML Engineering, Data Science, or Web Development roles. Eager to drive impactful, data-driven outcomes 
+in challenging technological environments.
           </p>
           <h3 className="text-2xl font-semibold mb-4">My Skills</h3>
           <div className="flex flex-wrap gap-3">
