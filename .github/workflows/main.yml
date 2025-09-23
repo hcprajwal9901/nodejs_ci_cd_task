@@ -18,6 +18,9 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_USERNAME }} # Use the secret we created
         password: ${{ secrets.DOCKER_PASSWORD }} # Use the secret we created
+        # Ensure that DOCKER_USERNAME and DOCKER_PASSWORD are set in your repository's secrets:
+        # Go to your GitHub repo > Settings > Secrets and variables > Actions > New repository secret
+        # Add DOCKER_USERNAME and DOCKER_PASSWORD with your DockerHub credentials
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
