@@ -2,6 +2,7 @@
   "name": "react-portfolio-website",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://hcprajwal9901.github.io/nodejs_ci_cd_task/",
   "type": "module",
 "scripts": {
   "dev": "vite",
