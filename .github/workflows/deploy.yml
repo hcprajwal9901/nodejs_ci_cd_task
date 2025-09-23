@@ -30,7 +30,7 @@ jobs:
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build   # (for CRA/Vite). Change if your framework outputs to "dist"
+          path: ./dist   # (for CRA/Vite). Change if your framework outputs to "dist"
 
   deploy:
     environment:
