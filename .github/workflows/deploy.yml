@@ -3,31 +3,38 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Trigger this workflow only when changes are pushed to the 'main' branch
+      - main  # Trigger workflow only on main branch pushes
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest # Use a fresh Ubuntu environment for the build
+    runs-on: ubuntu-latest  # Use a fresh Ubuntu environment
 
     steps:
+      # Step 1: Checkout repository
       - name: Checkout repository
-        uses: actions/checkout@v3 # Action to clone your repository
+        uses: actions/checkout@v3
 
+      # Step 2: Set up Node.js 20
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20' # Specify the Node.js version you're using (e.g., '16', '18', '20')
-          cache: 'npm' # Cache npm dependencies to speed up builds
+          node-version: '20'      # Node.js 20+
+          cache: 'npm'            # Cache npm dependencies
 
+      # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Step 4: Build the project
       - name: Build project
-        run: npm run build # Execute your build script, which creates the 'dist' folder
+        run: npm run build  # Generates the 'dist' folder
 
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main # Deploy the build output directly to the 'main' branch
-          folder: dist # The folder to deploy (your built output)
-          # cname: yourdomain.com # Uncomment and replace with your custom domain if you have one
+          branch: main        # Deploy to main branch
+          folder: dist        # Deploy the 'dist' folder
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub Actions token
+          clean: true         # Remove old files before deploying
+          commit-message: "Deploy React Vite project to GitHub Pages 🌐"
