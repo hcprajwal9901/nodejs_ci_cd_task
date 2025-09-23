@@ -36,5 +36,5 @@ jobs:
           branch: main        # Deploy to main branch
           folder: dist        # Deploy the 'dist' folder
           token: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub Actions token
-          clean: true         # Remove old files before deploying
+          clean: false         # Remove old files before deploying
           commit-message: "Deploy React Vite project to GitHub Pages 🌐"
