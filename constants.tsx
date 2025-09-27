@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     description: "Developed a personal portfolio website to showcase my projects and skills using React,NodeJS, TypeScript, and Tailwind CSS.",
     image: ".src/pics/pp.png",
     tags: ["React", "TypeScript", "Tailwind CSS", "JavaScript", "Web Development"],
-    liveUrl: "https://hcprajwal9901.github.io/nodejs_ci_cd_task/",
+    liveUrl: "https://hcprajwal9901.github.io/task_1_nodejs_ci_cd/",
     codeUrl: "https://github.com/hcprajwal9901/nodejs_ci_cd_task"}
 ];
 export const SKILLS = [
