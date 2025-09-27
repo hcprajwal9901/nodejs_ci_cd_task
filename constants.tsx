@@ -42,7 +42,7 @@ export const PROJECTS: Project[] = [
     image: ".src/pics/pp.png",
     tags: ["React", "TypeScript", "Tailwind CSS", "JavaScript", "Web Development"],
     liveUrl: "https://hcprajwal9901.github.io/task_1_nodejs_ci_cd/",
-    codeUrl: "https://github.com/hcprajwal9901/nodejs_ci_cd_task"}
+    codeUrl: "https://github.com/hcprajwal9901/task_1_nodejs_ci_cd"}
 ];
 export const SKILLS = [
   "PythonProgramming","SQL","NoSQL","postgreSQL",
